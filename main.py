@@ -42,3 +42,7 @@ def generate_pdf(request: HtmlPathsRequest):
         })
 
     return {"results": results}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000)
